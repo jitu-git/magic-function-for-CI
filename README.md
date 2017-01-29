@@ -22,3 +22,6 @@ Now your magic library is ready to use with `$this->magic` instance.
     $this->magic->tableName->findByName('user');
     $this->magic->tableName->findByUserName('user');
     $this->magic->tableName->findByEmail('user@email.com');
+    
+For more please read this [article](https://www.maxmarks.in/codes/magic-function-library-codeigniter-like-cakephp/)
+   
