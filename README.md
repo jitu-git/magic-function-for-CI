@@ -23,5 +23,10 @@ Now your magic library is ready to use with `$this->magic` instance.
     $this->magic->tableName->findByUserName('user');
     $this->magic->tableName->findByEmail('user@email.com');
     
+#Find All Results
+    $this->magic->tableName->findAll($conditions = array());
+#Count All Records
+    $this->magic->tableName->findCount($conditions = array());
+    
 For more please read this [article](https://www.maxmarks.in/codes/magic-function-library-codeigniter-like-cakephp/)
    
