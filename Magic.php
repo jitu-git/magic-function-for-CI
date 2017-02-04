@@ -5,6 +5,7 @@ class Magic {
 
     public $from;
     protected $fields = "All";
+    protected $count = "Count";
     public $where;
     private $_ci;
 
@@ -45,6 +46,12 @@ class Magic {
 
         switch ($method) {
             case $this->fields:
+                if(count($arguments) > 0)
+                    $this->where =  ($arguments[0]);
+                break;
+
+            case $this->count:
+                $this->_ci->db->select("count(*) as total");
                 if(count($arguments) > 0)
                     $this->where =  ($arguments[0]);
                 break;
